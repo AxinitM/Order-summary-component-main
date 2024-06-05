@@ -23,7 +23,7 @@ Users should be able to see hover states for interactive elements
 ### Links
 
 - Solution URL: https://github.com/AxinitM/Order-summary-component-main;
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://axinitm.github.io/Order-summary-component-main. 
 
 ### Built with
 
