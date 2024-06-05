@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* ### Primary colors*/
+  --PaleBlue: hsl(225, 100%, 94%);
+  --PaleBlueAnnual: hsla(225, 100%, 94%, 0.4);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --BrightBlueHover: hsla(245, 75%, 52%, 0.6);
+  --BrightBlueButtonShadow: hsla(245, 75%, 52%, 0.3);
+
+  /* ### Neutral colors*/
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+
+  /* ### Attribution color */
+  --AttributionColor: hsl(228, 45%, 44%);
+
+  /* Main font */
+  --MainFont: "Red Hat Display", sans-serif;
+}
+
+/* * {
+  box-sizing: border-box;
+ 
+} */
+
+/* General */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--PaleBlue);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: var(--MainFont);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Order-block */
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+}
+
+#order-form {
+  text-align: center;
+  width: 350px;
+  height: auto;
+  background-color: var(--VeryPaleBlue);
+  border-radius: 15px;
+  padding: 20px;
+  background-image: url(images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 170px;
+  box-shadow: 0 8px 12px var(--BrightBlueButtonShadow);
+  /* position: reletive; */
+}
+
+#main-content {
+  padding-top: 160px;
+}
+
+p {font-weight: 500;}
+
+#main-content > p {
+  line-height: 1.5em;
+  }
+
+.annual-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--PaleBlueAnnual);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left; 
+  /* gap: 20px;    doesn't work */
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: -80px;
+  line-height: 1.5em;
+}
+
+p.strong {
+  font-weight: 900;
+}
+
+.annual-plan img {
+  display: block;
+}
+
+.annual-plan p,
+.annual-plan a {
+  margin: 0;
+}
+
+.change-link {
+  color: var(--BrightBlue);
+  font-weight: 700;
+}
+.change-link:hover {
+  color: var(--BrightBlueHover);
+  text-decoration: none;
+}
+
+#button {
+  font-family: var(--MainFont);
+  font-weight: 700;
+  width: 300px;
+  height: 40px;
+  background-color: var(--BrightBlue);
+  color: var(--VeryPaleBlue);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 30px 0;
+  letter-spacing: 1.1px;
+  box-shadow: 0 8px 15px var(--BrightBlueButtonShadow);
+}
+
+#button:hover {
+  background-color: var(--BrightBlueHover);
+  cursor: pointer;
+}
+
+.cancel-order {
+  margin: 0 0 20px 0;
+  font-weight: 500;
+  
+}
+
+.cancel-order > a {
+  text-decoration: none;
+  color:black;
+}
+
+.cancel-order:hover {
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Aside block*/
+
+aside {
+  margin-top: 40px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--AttributionColor);
+}
+
+/* Media queries*/
+
+@media (max-width: 392px) {
+ 
+  body {
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  #order-form {
+    width: auto;
+    margin: 12px;
+  }
+
+.annual-plan {
+    flex-direction: row; 
+    align-items: center;
+    text-align: left;
+  }
+
+  .plan-details {
+    margin-left: 10px;
+  }
+
+  .annual-plan img {
+    width: 40px; 
+    height: 40px; 
+  }
+
+  
+  #button {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .cancel-order {
+    margin: 12px 0;
+  }
+
+  aside {
+    margin: 12px 0;
+  }
+}
