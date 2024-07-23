@@ -8,35 +8,22 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 - [Screenshot](#screenshot)
 - [Links](#links)
 - [Built with](#built-with)
-- [What I learned](#what-i-learned)
-- [Author](#author)
 
-### The challenge
+## The challenge
 
 Users should be able to see hover states for interactive elements
 
-### Screenshot
+## Screenshot
 
 ![](/images/Screenshot.png)
 
+## Links
 
-### Links
-
-- Solution URL: https://github.com/AxinitM/Order-summary-component-main;
 - Live Site URL: https://axinitm.github.io/Order-summary-component-main. 
 
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-
-### What I learned
-
-This challenge improved my knowledge in CSS (@media, Flexbox, nesting etc.).
-
-### Author
-
-- GitHub - [Andrei Martinenko](https://github.com/AxinitM)
-- Frontend Mentor - [@AxinitM](https://www.frontendmentor.io/profile/AxinitM)
